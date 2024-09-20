@@ -20,6 +20,7 @@ export default async function handler(req, res) {
       content: $.html()
     });
   } catch (err) {
+    console.log(err)
     res.status(404).json({ status: 404, error: err });
   }
 }
